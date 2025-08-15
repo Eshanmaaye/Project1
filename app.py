@@ -12,7 +12,7 @@ def get_db():
     conn = pymysql.connect(
         host=os.getenv("MYSQL_HOST", "127.0.0.1"),
         user=os.getenv("MYSQL_USER", "root"),
-        password=os.getenv("MYSQL_PASSWORD", ""),
+        password=os.getenv("MYSQL_PASSWORD", "272302"),
         database=os.getenv("MYSQL_DB", "thogai_db"),
         port=int(os.getenv("MYSQL_PORT", "3306")),
         cursorclass=pymysql.cursors.DictCursor,
